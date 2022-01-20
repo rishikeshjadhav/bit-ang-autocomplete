@@ -4,10 +4,14 @@ importers:
 
   .:
     specifiers:
+      '@angular/animations': 13.1.3
+      '@angular/cdk': 13.1.3
       '@angular/common': ~13.1.1
       '@angular/compiler': ~13.1.1
       '@angular/compiler-cli': ~13.1.1
       '@angular/core': ~13.1.1
+      '@angular/forms': 13.1.3
+      '@angular/material': 13.1.3
       '@angular/platform-browser': ~13.1.1
       '@angular/platform-browser-dynamic': ~13.1.1
       '@teambit/angular-v13': 0.0.13
@@ -20,9 +24,13 @@ importers:
       typescript: ~4.5.2
       zone.js: ~0.11.4
     dependencies:
+      '@angular/animations': registry.npmjs.org/@angular/animations/13.1.3_@angular+core@13.1.3
+      '@angular/cdk': registry.npmjs.org/@angular/cdk/13.1.3_8e7d0534739d84c27c16c2229aa6e2ef
       '@angular/common': registry.npmjs.org/@angular/common/13.1.3_@angular+core@13.1.3+rxjs@7.4.0
       '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
-      '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/13.1.3_82712a39e2434995c15c4ce349263713
+      '@angular/forms': registry.npmjs.org/@angular/forms/13.1.3_bcd8877345386b079e6b2b1f8a57ecb7
+      '@angular/material': registry.npmjs.org/@angular/material/13.1.3_299e5982b8fa274a3dc7e60508dba648
+      '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/13.1.3_47bff6b1806823127bc866f6d85d7c19
       '@angular/platform-browser-dynamic': registry.npmjs.org/@angular/platform-browser-dynamic/13.1.3_9d2c7eee1846907b90db43b8b519ad6e
       rxjs: registry.npmjs.org/rxjs/7.4.0
       tslib: registry.npmjs.org/tslib/2.3.1
@@ -334,7 +342,24 @@ packages:
     dependencies:
       '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
       tslib: registry.npmjs.org/tslib/2.3.1
-    dev: true
+
+  registry.npmjs.org/@angular/cdk/13.1.3_8e7d0534739d84c27c16c2229aa6e2ef:
+    resolution: {integrity: sha512-Psuri2mc6W+xKtZr39FHL+cDz7Le9kKTo8ziCtUiydikBBdqfOu6AnWUrEMEGFxS2wt8nolFXDAGUaMUAE3Ekg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/cdk/-/cdk-13.1.3.tgz}
+    id: registry.npmjs.org/@angular/cdk/13.1.3
+    name: '@angular/cdk'
+    version: 13.1.3
+    peerDependencies:
+      '@angular/common': ^13.0.0 || ^14.0.0-0
+      '@angular/core': ^13.0.0 || ^14.0.0-0
+      rxjs: ^6.5.3 || ^7.4.0
+    dependencies:
+      '@angular/common': registry.npmjs.org/@angular/common/13.1.3_@angular+core@13.1.3+rxjs@7.4.0
+      '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
+      rxjs: registry.npmjs.org/rxjs/7.4.0
+      tslib: registry.npmjs.org/tslib/2.3.1
+    optionalDependencies:
+      parse5: registry.npmjs.org/parse5/5.1.1
+    dev: false
 
   registry.npmjs.org/@angular/cli/13.1.4:
     resolution: {integrity: sha512-PP9xpvDDCHhLTIZjewQQzzf+JbpF2s5mXTW2AgIL/E53ukaVvXwwjFMt9dQvECwut/LDpThoc3OfqcGrmwtqnA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/cli/-/cli-13.1.4.tgz}
@@ -450,7 +475,30 @@ packages:
       '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/13.1.3_47bff6b1806823127bc866f6d85d7c19
       rxjs: registry.npmjs.org/rxjs/7.4.0
       tslib: registry.npmjs.org/tslib/2.3.1
-    dev: true
+
+  registry.npmjs.org/@angular/material/13.1.3_299e5982b8fa274a3dc7e60508dba648:
+    resolution: {integrity: sha512-fJmd73Tqlk/eKJ68XBGgwnoME3j+tfRG6CEFtNwMnWLkPTziWX5PHkY1D/cDWFa9VB6vjW8jxAE9UeQmXSk/RA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/material/-/material-13.1.3.tgz}
+    id: registry.npmjs.org/@angular/material/13.1.3
+    name: '@angular/material'
+    version: 13.1.3
+    peerDependencies:
+      '@angular/animations': ^13.0.0 || ^14.0.0-0
+      '@angular/cdk': 13.1.3
+      '@angular/common': ^13.0.0 || ^14.0.0-0
+      '@angular/core': ^13.0.0 || ^14.0.0-0
+      '@angular/forms': ^13.0.0 || ^14.0.0-0
+      '@angular/platform-browser': ^13.0.0 || ^14.0.0-0
+      rxjs: ^6.5.3 || ^7.4.0
+    dependencies:
+      '@angular/animations': registry.npmjs.org/@angular/animations/13.1.3_@angular+core@13.1.3
+      '@angular/cdk': registry.npmjs.org/@angular/cdk/13.1.3_8e7d0534739d84c27c16c2229aa6e2ef
+      '@angular/common': registry.npmjs.org/@angular/common/13.1.3_@angular+core@13.1.3+rxjs@7.4.0
+      '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
+      '@angular/forms': registry.npmjs.org/@angular/forms/13.1.3_bcd8877345386b079e6b2b1f8a57ecb7
+      '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/13.1.3_47bff6b1806823127bc866f6d85d7c19
+      rxjs: registry.npmjs.org/rxjs/7.4.0
+      tslib: registry.npmjs.org/tslib/2.3.1
+    dev: false
 
   registry.npmjs.org/@angular/platform-browser-dynamic/13.1.3_9d2c7eee1846907b90db43b8b519ad6e:
     resolution: {integrity: sha512-vEWyJ+2gkwh2N6KOJfxUNSdSO51ROlzCqqzCfHrPYQrlOFUfKsYKA1uoiB5UGfFEU0HBtIRWn6xoUy3wzVOZbw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/platform-browser-dynamic/-/platform-browser-dynamic-13.1.3.tgz}
@@ -467,7 +515,7 @@ packages:
       '@angular/common': registry.npmjs.org/@angular/common/13.1.3_@angular+core@13.1.3+rxjs@7.4.0
       '@angular/compiler': registry.npmjs.org/@angular/compiler/13.1.3
       '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
-      '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/13.1.3_82712a39e2434995c15c4ce349263713
+      '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/13.1.3_47bff6b1806823127bc866f6d85d7c19
       tslib: registry.npmjs.org/tslib/2.3.1
 
   registry.npmjs.org/@angular/platform-browser/13.1.3_47bff6b1806823127bc866f6d85d7c19:
@@ -488,26 +536,6 @@ packages:
       '@angular/common': registry.npmjs.org/@angular/common/13.1.3_@angular+core@13.1.3+rxjs@7.4.0
       '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
       tslib: registry.npmjs.org/tslib/2.3.1
-    dev: true
-
-  registry.npmjs.org/@angular/platform-browser/13.1.3_82712a39e2434995c15c4ce349263713:
-    resolution: {integrity: sha512-mnWjdr9UTNZvGk8jPI6O9FIhun8Q/0ghy3dg3I9AfRzEG4vPiIZW1ICksTiB+jV9etzhKpidtmg71bwgeXax1A==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-13.1.3.tgz}
-    id: registry.npmjs.org/@angular/platform-browser/13.1.3
-    name: '@angular/platform-browser'
-    version: 13.1.3
-    engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0}
-    peerDependencies:
-      '@angular/animations': 13.1.3
-      '@angular/common': 13.1.3
-      '@angular/core': 13.1.3
-    peerDependenciesMeta:
-      '@angular/animations':
-        optional: true
-    dependencies:
-      '@angular/common': registry.npmjs.org/@angular/common/13.1.3_@angular+core@13.1.3+rxjs@7.4.0
-      '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
-      tslib: registry.npmjs.org/tslib/2.3.1
-    dev: false
 
   registry.npmjs.org/@angular/router/13.1.3_bcd8877345386b079e6b2b1f8a57ecb7:
     resolution: {integrity: sha512-L86kARlc5UNi5KeI0O8PO7wFbTzjEI8ouz+z+aNmCnMUUNX0rbvbuXiPdDvLc71nKZznsPCl2IuO8ojyHrSPsQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/router/-/router-13.1.3.tgz}
@@ -13692,6 +13720,14 @@ packages:
     dependencies:
       parse5: registry.npmjs.org/parse5/6.0.1
     dev: true
+
+  registry.npmjs.org/parse5/5.1.1:
+    resolution: {integrity: sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/parse5/-/parse5-5.1.1.tgz}
+    name: parse5
+    version: 5.1.1
+    requiresBuild: true
+    dev: false
+    optional: true
 
   registry.npmjs.org/parse5/6.0.1:
     resolution: {integrity: sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/parse5/-/parse5-6.0.1.tgz}

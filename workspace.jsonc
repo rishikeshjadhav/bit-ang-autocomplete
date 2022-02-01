@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://harmony-docs.bit.dev/workspace/configurations
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -40,10 +40,10 @@
     "policy": {
       "dependencies": {},
       "peerDependencies": {
-        "@angular/animations": "13.1.3",
-        "@angular/cdk": "13.1.3",
-        "@angular/forms": "13.1.3",
-        "@angular/material": "13.1.3"
+        "@angular/animations": "13.2.0",
+        "@angular/cdk": "13.2.0",
+        "@angular/forms": "13.2.0",
+        "@angular/material": "13.2.0"
       }
     },
     "nodeLinker": "hoisted"
@@ -57,13 +57,13 @@
    **/
   "teambit.workspace/variants": {
     "*": {
-      "teambit.angular/angular-v13@0.0.13": {}
+      "teambit.angular/angular-v13@0.0.16": {}
     }
   },
-  "teambit.angular/angular-v13@0.0.13": {},
+  "teambit.angular/angular-v13@0.0.16": {},
   "teambit.generator/generator": {
     "aspects": [
-      "teambit.angular/angular-v13@0.0.13"
+      "teambit.angular/angular-v13@0.0.16"
     ]
   }
 }

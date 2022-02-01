@@ -9,6 +9,12 @@
  */
 
 {
+    "env/ang-mat-env": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "scope/env/ang-mat-env"
+    },
     "ui/my-button": {
         "scope": "",
         "version": "",

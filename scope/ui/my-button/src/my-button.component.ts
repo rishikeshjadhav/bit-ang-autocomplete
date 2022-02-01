@@ -18,6 +18,8 @@ export class MyButtonComponent implements OnInit {
 
   constructor(public dialog: MatDialog) {
     this.filteredOptions = new Observable<string[]>();
+
+    // this.initMaterial();
   }
 
   ngOnInit() {
@@ -26,6 +28,10 @@ export class MyButtonComponent implements OnInit {
       map(value => this._filter(value)),
     );
   }
+
+  initMaterial = () => {
+    document.getElementsByTagName('body')[0].setAttribute('class', 'mat-typography');
+  };
 
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();

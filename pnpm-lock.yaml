@@ -6,44 +6,33 @@ importers:
     specifiers:
       '@angular/animations': 13.2.0
       '@angular/cdk': 13.2.0
-      '@angular/common': ~13.1.1
       '@angular/compiler': ~13.1.1
       '@angular/compiler-cli': ~13.1.1
-      '@angular/core': ~13.1.1
       '@angular/forms': 13.2.0
       '@angular/material': 13.2.0
-      '@angular/platform-browser': ~13.1.1
-      '@angular/platform-browser-dynamic': ~13.1.1
       '@teambit/angular-v13': 0.0.16
       '@types/jest': ^27.0.3
       '@types/node': ^12.11.1
       jest: ^27.4.4
       jest-preset-angular: ~11.0.1
-      rxjs: ~7.4.0
       tslib: ^2.3.0
-      typescript: ~4.5.2
-      zone.js: ~0.11.4
     dependencies:
-      '@angular/animations': registry.npmjs.org/@angular/animations/13.2.0_@angular+core@13.1.3
-      '@angular/cdk': registry.npmjs.org/@angular/cdk/13.2.0_8e7d0534739d84c27c16c2229aa6e2ef
-      '@angular/common': registry.npmjs.org/@angular/common/13.1.3_@angular+core@13.1.3+rxjs@7.4.0
-      '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
-      '@angular/forms': registry.npmjs.org/@angular/forms/13.2.0_bcd8877345386b079e6b2b1f8a57ecb7
-      '@angular/material': registry.npmjs.org/@angular/material/13.2.0_7c68839cd6be62f0f94a0094e706a324
-      '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/13.1.3_e2a379dc29e6125d23382b0e13dfc036
-      '@angular/platform-browser-dynamic': registry.npmjs.org/@angular/platform-browser-dynamic/13.1.3_9d2c7eee1846907b90db43b8b519ad6e
-      rxjs: registry.npmjs.org/rxjs/7.4.0
+      '@angular/animations': registry.npmjs.org/@angular/animations/13.2.0
+      '@angular/cdk': registry.npmjs.org/@angular/cdk/13.2.0
+      '@angular/forms': registry.npmjs.org/@angular/forms/13.2.0
+      '@angular/material': registry.npmjs.org/@angular/material/13.2.0_3af548441b57819683d431e98d61afb6
       tslib: registry.npmjs.org/tslib/2.3.1
-      typescript: registry.npmjs.org/typescript/4.5.4
-      zone.js: registry.npmjs.org/zone.js/0.11.4
     devDependencies:
       '@angular/compiler': registry.npmjs.org/@angular/compiler/13.1.3
-      '@angular/compiler-cli': registry.npmjs.org/@angular/compiler-cli/13.1.3_d4149317aeb036fd8ceea545fea4d36d
+      '@angular/compiler-cli': registry.npmjs.org/@angular/compiler-cli/13.1.3_@angular+compiler@13.1.3
       '@teambit/angular-v13': registry.npmjs.org/@teambit/angular-v13/0.0.16_@types+node@12.20.42
       '@types/jest': registry.npmjs.org/@types/jest/27.4.0
       '@types/node': registry.npmjs.org/@types/node/12.20.42
       jest: registry.npmjs.org/jest/27.4.7
-      jest-preset-angular: registry.npmjs.org/jest-preset-angular/11.0.1_9c1fbb4c7fadd20fa96f656ba6293628
+      jest-preset-angular: registry.npmjs.org/jest-preset-angular/11.0.1_14e60c84055eec4e213164e3beda2104
+
+  scope/env/ang-mat-env:
+    specifiers: {}
 
   scope/ui/my-button:
     specifiers: {}
@@ -344,22 +333,19 @@ packages:
       tslib: registry.npmjs.org/tslib/2.3.1
     dev: true
 
-  registry.npmjs.org/@angular/animations/13.2.0_@angular+core@13.1.3:
+  registry.npmjs.org/@angular/animations/13.2.0:
     resolution: {integrity: sha512-zLmNxkfxDQShJ97V9gTyQdlEbCD/zDUdpHXKlUViBIbe2M13FLGV3e2D+x9jGr/PRzFe0cukOnYxNEHJqqjqPA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/animations/-/animations-13.2.0.tgz}
-    id: registry.npmjs.org/@angular/animations/13.2.0
     name: '@angular/animations'
     version: 13.2.0
     engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0}
     peerDependencies:
       '@angular/core': 13.2.0
     dependencies:
-      '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
       tslib: registry.npmjs.org/tslib/2.3.1
     dev: false
 
-  registry.npmjs.org/@angular/cdk/13.2.0_8e7d0534739d84c27c16c2229aa6e2ef:
+  registry.npmjs.org/@angular/cdk/13.2.0:
     resolution: {integrity: sha512-1fQyfr/KmcF8y/Xz789DN37XgjQPE4kAYjoh6GRd62yKDm/Ic9hKuoKfAthA1bQeskjTO1pb4sMOgum8B4iHeA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/cdk/-/cdk-13.2.0.tgz}
-    id: registry.npmjs.org/@angular/cdk/13.2.0
     name: '@angular/cdk'
     version: 13.2.0
     peerDependencies:
@@ -367,9 +353,6 @@ packages:
       '@angular/core': ^13.0.0 || ^14.0.0-0
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/common': registry.npmjs.org/@angular/common/13.1.3_@angular+core@13.1.3+rxjs@7.4.0
-      '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
-      rxjs: registry.npmjs.org/rxjs/7.4.0
       tslib: registry.npmjs.org/tslib/2.3.1
     optionalDependencies:
       parse5: registry.npmjs.org/parse5/5.1.1
@@ -420,6 +403,34 @@ packages:
       '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
       rxjs: registry.npmjs.org/rxjs/7.4.0
       tslib: registry.npmjs.org/tslib/2.3.1
+    dev: true
+
+  registry.npmjs.org/@angular/compiler-cli/13.1.3_@angular+compiler@13.1.3:
+    resolution: {integrity: sha512-ALURaJATc54DzPuiZBvALf/alEp1wr7Hjmw4FuMn2cU7p8lwKkra1Dz5dAZOxh7jAcD1GJfrK/+Sb7A3cuuKjQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/compiler-cli/-/compiler-cli-13.1.3.tgz}
+    id: registry.npmjs.org/@angular/compiler-cli/13.1.3
+    name: '@angular/compiler-cli'
+    version: 13.1.3
+    engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0}
+    hasBin: true
+    peerDependencies:
+      '@angular/compiler': 13.1.3
+      typescript: '>=4.4.2 <4.6'
+    dependencies:
+      '@angular/compiler': registry.npmjs.org/@angular/compiler/13.1.3
+      '@babel/core': registry.npmjs.org/@babel/core/7.16.10
+      canonical-path: registry.npmjs.org/canonical-path/1.0.0
+      chokidar: registry.npmjs.org/chokidar/3.5.3
+      convert-source-map: registry.npmjs.org/convert-source-map/1.8.0
+      dependency-graph: registry.npmjs.org/dependency-graph/0.11.0
+      magic-string: registry.npmjs.org/magic-string/0.25.7
+      reflect-metadata: registry.npmjs.org/reflect-metadata/0.1.13
+      semver: registry.npmjs.org/semver/7.3.5
+      sourcemap-codec: registry.npmjs.org/sourcemap-codec/1.4.8
+      tslib: registry.npmjs.org/tslib/2.3.1
+      yargs: registry.npmjs.org/yargs/17.3.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   registry.npmjs.org/@angular/compiler-cli/13.1.3_d4149317aeb036fd8ceea545fea4d36d:
     resolution: {integrity: sha512-ALURaJATc54DzPuiZBvALf/alEp1wr7Hjmw4FuMn2cU7p8lwKkra1Dz5dAZOxh7jAcD1GJfrK/+Sb7A3cuuKjQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/compiler-cli/-/compiler-cli-13.1.3.tgz}
@@ -471,6 +482,7 @@ packages:
       rxjs: registry.npmjs.org/rxjs/7.4.0
       tslib: registry.npmjs.org/tslib/2.3.1
       zone.js: registry.npmjs.org/zone.js/0.11.4
+    dev: true
 
   registry.npmjs.org/@angular/forms/13.1.3_bcd8877345386b079e6b2b1f8a57ecb7:
     resolution: {integrity: sha512-c4N9zZSILyEbomY2CJo1WAMxiHu/qlycvzxKH5NFS2P2+fieORlbKUJ2p1CbYqcIxVnLYRSdWH8f1JpoaG0ETw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/forms/-/forms-13.1.3.tgz}
@@ -491,9 +503,8 @@ packages:
       tslib: registry.npmjs.org/tslib/2.3.1
     dev: true
 
-  registry.npmjs.org/@angular/forms/13.2.0_bcd8877345386b079e6b2b1f8a57ecb7:
+  registry.npmjs.org/@angular/forms/13.2.0:
     resolution: {integrity: sha512-aduXLuvqynDRRdb316yY1O5rdMQ2DKeNxu5P2FG1nkLQ3hqZvpiaUMhFyXvKDG3s0rV5e/PZs1cpg0Aqdfwevw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/forms/-/forms-13.2.0.tgz}
-    id: registry.npmjs.org/@angular/forms/13.2.0
     name: '@angular/forms'
     version: 13.2.0
     engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0}
@@ -503,14 +514,10 @@ packages:
       '@angular/platform-browser': 13.2.0
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/common': registry.npmjs.org/@angular/common/13.1.3_@angular+core@13.1.3+rxjs@7.4.0
-      '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
-      '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/13.1.3_e2a379dc29e6125d23382b0e13dfc036
-      rxjs: registry.npmjs.org/rxjs/7.4.0
       tslib: registry.npmjs.org/tslib/2.3.1
     dev: false
 
-  registry.npmjs.org/@angular/material/13.2.0_7c68839cd6be62f0f94a0094e706a324:
+  registry.npmjs.org/@angular/material/13.2.0_3af548441b57819683d431e98d61afb6:
     resolution: {integrity: sha512-VxseAkzEN2fakorQUa+r4enUhTAeY4gJ8NRbd0A7r0gKDLGcszJ1XYph4WiNs3bLkZUH1EirhOMAfpNOZ8SqFg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/material/-/material-13.2.0.tgz}
     id: registry.npmjs.org/@angular/material/13.2.0
     name: '@angular/material'
@@ -524,13 +531,9 @@ packages:
       '@angular/platform-browser': ^13.0.0 || ^14.0.0-0
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
-      '@angular/animations': registry.npmjs.org/@angular/animations/13.2.0_@angular+core@13.1.3
-      '@angular/cdk': registry.npmjs.org/@angular/cdk/13.2.0_8e7d0534739d84c27c16c2229aa6e2ef
-      '@angular/common': registry.npmjs.org/@angular/common/13.1.3_@angular+core@13.1.3+rxjs@7.4.0
-      '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
-      '@angular/forms': registry.npmjs.org/@angular/forms/13.2.0_bcd8877345386b079e6b2b1f8a57ecb7
-      '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/13.1.3_e2a379dc29e6125d23382b0e13dfc036
-      rxjs: registry.npmjs.org/rxjs/7.4.0
+      '@angular/animations': registry.npmjs.org/@angular/animations/13.2.0
+      '@angular/cdk': registry.npmjs.org/@angular/cdk/13.2.0
+      '@angular/forms': registry.npmjs.org/@angular/forms/13.2.0
       tslib: registry.npmjs.org/tslib/2.3.1
     dev: false
 
@@ -549,8 +552,9 @@ packages:
       '@angular/common': registry.npmjs.org/@angular/common/13.1.3_@angular+core@13.1.3+rxjs@7.4.0
       '@angular/compiler': registry.npmjs.org/@angular/compiler/13.1.3
       '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
-      '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/13.1.3_e2a379dc29e6125d23382b0e13dfc036
+      '@angular/platform-browser': registry.npmjs.org/@angular/platform-browser/13.1.3_47bff6b1806823127bc866f6d85d7c19
       tslib: registry.npmjs.org/tslib/2.3.1
+    dev: true
 
   registry.npmjs.org/@angular/platform-browser/13.1.3_47bff6b1806823127bc866f6d85d7c19:
     resolution: {integrity: sha512-mnWjdr9UTNZvGk8jPI6O9FIhun8Q/0ghy3dg3I9AfRzEG4vPiIZW1ICksTiB+jV9etzhKpidtmg71bwgeXax1A==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-13.1.3.tgz}
@@ -571,26 +575,6 @@ packages:
       '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
       tslib: registry.npmjs.org/tslib/2.3.1
     dev: true
-
-  registry.npmjs.org/@angular/platform-browser/13.1.3_e2a379dc29e6125d23382b0e13dfc036:
-    resolution: {integrity: sha512-mnWjdr9UTNZvGk8jPI6O9FIhun8Q/0ghy3dg3I9AfRzEG4vPiIZW1ICksTiB+jV9etzhKpidtmg71bwgeXax1A==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-13.1.3.tgz}
-    id: registry.npmjs.org/@angular/platform-browser/13.1.3
-    name: '@angular/platform-browser'
-    version: 13.1.3
-    engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0}
-    peerDependencies:
-      '@angular/animations': 13.1.3
-      '@angular/common': 13.1.3
-      '@angular/core': 13.1.3
-    peerDependenciesMeta:
-      '@angular/animations':
-        optional: true
-    dependencies:
-      '@angular/animations': registry.npmjs.org/@angular/animations/13.2.0_@angular+core@13.1.3
-      '@angular/common': registry.npmjs.org/@angular/common/13.1.3_@angular+core@13.1.3+rxjs@7.4.0
-      '@angular/core': registry.npmjs.org/@angular/core/13.1.3_rxjs@7.4.0+zone.js@0.11.4
-      tslib: registry.npmjs.org/tslib/2.3.1
-    dev: false
 
   registry.npmjs.org/@angular/router/13.1.3_bcd8877345386b079e6b2b1f8a57ecb7:
     resolution: {integrity: sha512-L86kARlc5UNi5KeI0O8PO7wFbTzjEI8ouz+z+aNmCnMUUNX0rbvbuXiPdDvLc71nKZznsPCl2IuO8ojyHrSPsQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@angular/router/-/router-13.1.3.tgz}
@@ -11418,6 +11402,35 @@ packages:
       jest-resolve: registry.npmjs.org/jest-resolve/27.4.6
     dev: true
 
+  registry.npmjs.org/jest-preset-angular/11.0.1_14e60c84055eec4e213164e3beda2104:
+    resolution: {integrity: sha512-7img58VmxvPtwOrkEEczDbV3cjdO/1qzB8Edbde8/e3GJIIk+6LcPnHOLw+dagJxZhcWagYGbqNbR7dxqntOBQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/jest-preset-angular/-/jest-preset-angular-11.0.1.tgz}
+    id: registry.npmjs.org/jest-preset-angular/11.0.1
+    name: jest-preset-angular
+    version: 11.0.1
+    engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0}
+    peerDependencies:
+      '@angular/compiler-cli': '>=10.0.0'
+      '@angular/core': '>=10.0.0'
+      '@angular/platform-browser-dynamic': '>=10.0.0'
+    dependencies:
+      '@angular/compiler-cli': registry.npmjs.org/@angular/compiler-cli/13.1.3_@angular+compiler@13.1.3
+      bs-logger: registry.npmjs.org/bs-logger/0.2.6
+      esbuild: registry.npmjs.org/esbuild/0.13.13
+      jest-environment-jsdom: registry.npmjs.org/jest-environment-jsdom/27.4.6
+      pretty-format: registry.npmjs.org/pretty-format/27.4.6
+      ts-jest: registry.npmjs.org/ts-jest/27.1.3_05b8df0cb49e6232d41f092094865560
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@types/jest'
+      - babel-jest
+      - bufferutil
+      - canvas
+      - jest
+      - supports-color
+      - typescript
+      - utf-8-validate
+    dev: true
+
   registry.npmjs.org/jest-preset-angular/11.0.1_9c1fbb4c7fadd20fa96f656ba6293628:
     resolution: {integrity: sha512-7img58VmxvPtwOrkEEczDbV3cjdO/1qzB8Edbde8/e3GJIIk+6LcPnHOLw+dagJxZhcWagYGbqNbR7dxqntOBQ==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/jest-preset-angular/-/jest-preset-angular-11.0.1.tgz}
     id: registry.npmjs.org/jest-preset-angular/11.0.1
@@ -16103,6 +16116,7 @@ packages:
     version: 7.4.0
     dependencies:
       tslib: registry.npmjs.org/tslib/2.1.0
+    dev: true
 
   registry.npmjs.org/safe-buffer/5.1.2:
     resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz}
@@ -17770,7 +17784,7 @@ packages:
       tslib: registry.npmjs.org/tslib/1.14.1
     dev: true
 
-  registry.npmjs.org/ts-jest/27.1.3_4d49fa1626ccfe841fb357ce0c97d5e0:
+  registry.npmjs.org/ts-jest/27.1.3_05b8df0cb49e6232d41f092094865560:
     resolution: {integrity: sha512-6Nlura7s6uM9BVUAoqLH7JHyMXjz8gluryjpPXxr3IxZdAXnU6FhjvVLHFtfd1vsE1p8zD1OJfskkc0jhTSnkA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/ts-jest/-/ts-jest-27.1.3.tgz}
     id: registry.npmjs.org/ts-jest/27.1.3
     name: ts-jest
@@ -17799,6 +17813,43 @@ packages:
       esbuild: registry.npmjs.org/esbuild/0.13.13
       fast-json-stable-stringify: registry.npmjs.org/fast-json-stable-stringify/2.1.0
       jest: registry.npmjs.org/jest/27.4.7
+      jest-util: registry.npmjs.org/jest-util/27.4.2
+      json5: registry.npmjs.org/json5/2.2.0
+      lodash.memoize: registry.npmjs.org/lodash.memoize/4.1.2
+      make-error: registry.npmjs.org/make-error/1.3.6
+      semver: registry.npmjs.org/semver/7.3.5
+      yargs-parser: registry.npmjs.org/yargs-parser/20.2.9
+    dev: true
+
+  registry.npmjs.org/ts-jest/27.1.3_4d49fa1626ccfe841fb357ce0c97d5e0:
+    resolution: {integrity: sha512-6Nlura7s6uM9BVUAoqLH7JHyMXjz8gluryjpPXxr3IxZdAXnU6FhjvVLHFtfd1vsE1p8zD1OJfskkc0jhTSnkA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/ts-jest/-/ts-jest-27.1.3.tgz}
+    id: registry.npmjs.org/ts-jest/27.1.3
+    name: ts-jest
+    version: 27.1.3
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    hasBin: true
+    peerDependencies:
+      '@babel/core': '>=7.0.0-beta.0 <8'
+      '@types/jest': ^27.0.0
+      babel-jest: '>=27.0.0 <28'
+      esbuild: ~0.14.0
+      jest: ^27.0.0
+      typescript: '>=3.8 <5.0'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      '@types/jest':
+        optional: true
+      babel-jest:
+        optional: true
+      esbuild:
+        optional: true
+    dependencies:
+      '@types/jest': registry.npmjs.org/@types/jest/27.4.0
+      bs-logger: registry.npmjs.org/bs-logger/0.2.6
+      esbuild: registry.npmjs.org/esbuild/0.13.13
+      fast-json-stable-stringify: registry.npmjs.org/fast-json-stable-stringify/2.1.0
+      jest: registry.npmjs.org/jest/27.4.7_ts-node@9.1.1
       jest-util: registry.npmjs.org/jest-util/27.4.2
       json5: registry.npmjs.org/json5/2.2.0
       lodash.memoize: registry.npmjs.org/lodash.memoize/4.1.2
@@ -17837,6 +17888,7 @@ packages:
     resolution: {integrity: sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/tslib/-/tslib-2.1.0.tgz}
     name: tslib
     version: 2.1.0
+    dev: true
 
   registry.npmjs.org/tslib/2.3.1:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz}
@@ -17979,6 +18031,7 @@ packages:
     version: 4.5.4
     engines: {node: '>=4.2.0'}
     hasBin: true
+    dev: true
 
   registry.npmjs.org/uid-number/0.0.6:
     resolution: {integrity: sha1-DqEOgDXo61uOREnwbaHHMGY7qoE=, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/uid-number/-/uid-number-0.0.6.tgz}
@@ -19172,6 +19225,7 @@ packages:
     version: 0.11.4
     dependencies:
       tslib: registry.npmjs.org/tslib/2.3.1
+    dev: true
 
   registry.npmjs.org/zwitch/1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/zwitch/-/zwitch-1.0.5.tgz}
